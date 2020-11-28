@@ -18,7 +18,7 @@ import javax.crypto.spec.DESKeySpec
 fun main() {
     //
     val input = "des加密demo"
-    //DES 密钥 8位
+    //DES 密钥 8位 密钥des长度8位  DES前7位不参与加密计算，最后一位作为校验码 
     val password = "125489451"
 
     println(String(DESCrypt.encrypt(input, password)))

@@ -14,6 +14,10 @@ import javax.crypto.spec.SecretKeySpec
  * @description:
  */
 object AESCrypt{
+
+    //AES 密钥字节长度 16位 16个字节 16*8 128 所有位数参与
+
+
     fun encipher(input:String,password:String):ByteArray{
         val cipher = Cipher.getInstance("AES")
 
